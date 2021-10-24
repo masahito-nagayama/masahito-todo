@@ -1,12 +1,1 @@
-inherit_gem:
-  retrieva-cop:
-    - "config/rubocop.yml"
-    # comment unless use rails cops
-    - "config/rails.yml"
-    # comment unless use rspec cops
-    - "config/rspec.yml"
-
-AllCops:
-  TargetRubyVersion: 3.1
-  # comment unless use rails cops
-  TargetRailsVersion: 5.1
+inherit_from: .rubocop_todo.yml

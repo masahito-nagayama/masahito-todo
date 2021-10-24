@@ -1,25 +1,12 @@
-# README
+# このアプリケーションの概要
+株式会社万葉の研修カリキュラムというものを発見したので、やってみる。  
+https://github.com/everyleaf/el-training/blob/master/docs/el-training.md  
+↑これが研修のカリキュラム
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## rubocop
+```
+$ bundle exec rubocop -a
+```
+これで自動修正をしてくれる。  
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# masahito-todo
+違反内容の出力のみをしたい場合は-aオプションを外す。

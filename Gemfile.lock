@@ -150,10 +150,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (2.1.1)
-    retrieva-cop (0.1.9)
-      rubocop (>= 0.72)
-      rubocop-rails (>= 2.3.2)
-      rubocop-rspec (>= 1.18.0)
     rexml (3.2.5)
     rubocop (1.22.2)
       parallel (~> 1.10)
@@ -166,6 +162,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.12.0)
       parser (>= 3.0.1.1)
+    rubocop-performance (1.11.5)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
     rubocop-rails (2.12.4)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
@@ -239,7 +238,10 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
-  retrieva-cop
+  rubocop
+  rubocop-performance
+  rubocop-rails
+  rubocop-rspec
   sass-rails (>= 6)
   selenium-webdriver
   spring
