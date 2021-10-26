@@ -1,0 +1,5 @@
+<%= form_for @task, url: {action: "new"} do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :description %>
+  <%= f.submit "Create" %>
+<% end %>
