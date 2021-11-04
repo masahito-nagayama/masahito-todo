@@ -1,5 +1,13 @@
-<%= form_for @task, url: {action: "new"} do |f| %>
-  <%= f.text_field :name %>
-  <%= f.text_area :description %>
-  <%= f.submit "Create" %>
+<h2>タスクを新しく追加しよう</h2>
+<%= form_for @task, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <p>
+    タスク名：<%= f.text_field :name %>
+  </p>
+  <p>
+    タスク詳細：<%= f.text_area :description %>
+  </p>
+  <p>
+    期限：<%= f.date_select :deadline %>
+  </p>
+  <%= f.submit "タスクの登録" %>
 <% end %>
